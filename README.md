@@ -1,4 +1,4 @@
-# Virtual-Library
+# Virtual-Library VL
 Trello kde sú špecifikované úlohy a stav projektu: https://trello.com/b/medRD1JD/virtualna-kniznica
 
 ## 1. Spíšete stručný obsah, čo by to malo robiť (jeden odstavec).
