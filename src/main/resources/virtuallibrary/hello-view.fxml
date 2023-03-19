@@ -3,14 +3,28 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
 <?import javafx.scene.control.Button?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="virtuallibrary.HelloController">
+      fx:controller="virtuallibrary.LibraryController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets top="10" right="10" bottom="10" left="10" />
     </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label text="Book Library" style="-fx-font-size: 24;" />
+    <HBox spacing="10">
+        <Label text="Title:" />
+        <TextField fx:id="titleField" />
+        <Label text="Author:" />
+        <TextField fx:id="authorField" />
+        <Button text="Add Book" onAction="#addBook" />
+        <Button text="Delete Selected Book" onAction="#deleteSelectedBook" />
+    </HBox>
+    <TableView fx:id="bookTableView">
+        <columns>
+            <TableColumn text="Title" fx:id="titleColumn" />
+            <TableColumn text="Author" fx:id="authorColumn" />
+        </columns>
+    </TableView>
 </VBox>
